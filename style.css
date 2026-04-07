@@ -1,0 +1,420 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #fcfaf8; 
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+header {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(219, 200, 213); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #f8bbd0;
+
+}
+
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #4a4a4a;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: 0.3s;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+
+nav ul li a:hover {
+    color: #fff; 
+}
+
+
+#hero {
+    height: 100vh; 
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('assets/hero-arkaplan.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#hero p {
+    font-size: 2rem; 
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+
+.btn-randevu{
+    padding: 12px 30px;
+    background-color: #d4a373; 
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-randevu:hover {
+    background-color: #bc8a5f;
+}
+.logo, h1, h2 {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+h2{
+    color: #d58bbd;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+body, p, li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#services {
+    padding: 80px 10%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap; /* Mobilde alt alta geçmesi için */
+    margin-top: 40px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 320px; /* Sabit genişlik kartları eşitler */
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #fce4ec;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Üzerine gelince yukarı zıplar */
+    box-shadow: 0 15px 35px rgba(219, 200, 213, 0.4);
+}
+
+.service-icon i {
+    font-size: 45px;
+    color: #d58bbd; /* Altın/Toprak tonu */
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #777;
+    line-height: 1.6;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* İçerikleri karta dengeli dağıtır */
+    overflow: hidden; /* Resim köşelerden taşmasın */
+}
+
+.card-image {
+    margin-top: 20px;
+    width: 100%;
+    height: 180px; /* Resimlerin boyunu sabitleyelim ki kartlar eşit dursun */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmi bozmadan kutuya tam oturtur */
+    transition: transform 0.5s ease;
+}
+
+/* Kartın üzerine gelince resim hafifçe büyüsün (Zoom efekti) */
+.service-card:hover .card-image img {
+    transform: scale(1.1);
+}
+/* Hakkımızda Bölümü */
+#about {
+    padding: 100px 15%;
+    background-color: #fcfaf8; 
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* İletişim Bölümü */
+#contact {
+    text-align: center;
+    padding: 80px 10%;
+    background: #fff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #bc8a5f;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.contact-info i {
+    color: #dbc8d5; 
+    margin-right: 10px;
+}
+
+/* İletişim Formu */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #dbc8d5;
+}
+
+/* Sosyal Medya İkonları */
+.social-links a {
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #dbc8d5;
+}
+
+/* Footer */
+footer {
+    padding: 30px;
+    background: #4a4a4a;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#prices {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: #fcfaf8;
+    overflow: hidden;
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.price-category {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    flex: 1; 
+    min-width: 300px; 
+    max-width: 400px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+    border: 1px solid #fce4ec;
+}
+
+.price-category h3 {
+    font-family: 'Playfair Display', serif;
+    color: #e6cbb3;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1.5px solid #dbc8d5;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-category ul {
+    list-style: none;
+}
+
+.price-category ul li {
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.price-category ul li:last-child {
+    border-bottom: none;
+}
+
+.price-category ul li span:last-child {
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- MOBİL AYARLAR --- */
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    header h1 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    
+    #hero p {
+        font-size: 1.5rem;
+        padding: 0 20px;
+    }
+
+    
+    .section-title {
+        font-size: 2rem;
+    }
+
+    
+    .service-card, .price-category, .contact-form, .contact-info {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column; 
+        gap: 30px;
+    }
+
+    
+}
